@@ -12,8 +12,8 @@
 						<div class="row 200%">
 							<div class="6u 12u$(medium)">
 								<header class="major">
-									<h2>Sad/Meloncholy</h2>
-									<p>this is where the player will go</p>
+									<h2>Maecenas luctus lectus</h2>
+									<p>Perspiciatis doloremque recusandae dolor</p>
 								</header>
 							</div>
 							<div class="6u$ 12u$(medium)">

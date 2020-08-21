@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/posts/{post}', 'PostsController@show');
+Route::get('/media/{media}', 'MediaController@show');
+
+// dd($_SERVER['REQUEST_URI']);
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -21,6 +26,8 @@ Route::get('/', function () {
 Route::get('/composition', function () {
     return view('composition');
 });
+
+
 
 Route::get('/teaching', function () {
     return view('teaching');
