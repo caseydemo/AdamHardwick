@@ -16,7 +16,7 @@
 									
 									<h2>{{ $sample->name }}</h2>
 									<p>
-										<audio controls>
+										<audio controls controlsList="nodownload">
 										
 										<source src="{{ $sample->url }}" type="audio/ogg">
 										Your browser does not support the audio element.
