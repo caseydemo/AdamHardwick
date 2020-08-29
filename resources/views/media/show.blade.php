@@ -1,7 +1,12 @@
 @extends('layout')
 
 @section('content')
-{{ $media }}
+
+<audio controls>
+  <source src="{{ $media['url'] }}" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>
+
 <h1>Adam Hardwick</h1>
 <h1>Composition</h1>
 			<!-- One -->
