@@ -2,27 +2,34 @@
 
 @section('content')
 
-<audio controls>
-  <source src="{{ $media['url'] }}" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
 
-<h1>Adam Hardwick</h1>
-<h1>Composition</h1>
+<!-- <h1>Adam Hardwick</h1> -->
+
 			<!-- One -->
             <section id="one" class="wrapper style1">
 					<div class="container 75%">
 						<div class="row 200%">
 							<div class="6u 12u$(medium)">
 								<header class="major">
-									<h2>Maecenas luctus lectus</h2>
-									<p>Perspiciatis doloremque recusandae dolor</p>
+									
+									@foreach($media as $sample)
+									
+									<h2>{{ $sample->name }}</h2>
+									<p>
+										<audio controls>
+										
+										<source src="{{ $sample->url }}" type="audio/ogg">
+										Your browser does not support the audio element.
+										</audio>
+									</p>
+									
 								</header>
 							</div>
 							<div class="6u$ 12u$(medium)">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ea mollitia corporis id, distinctio sunt veritatis officiis dolore reprehenderit deleniti voluptatibus harum magna, doloremque alias quisquam minus, eaque. Feugiat quod, nesciunt! Iste quos ipsam, iusto sit esse.</p>
-								<p>Dolorum aspernatur maxime libero ratione quidem distinctio, placeat fugiat laborum voluptatum enim neque soluta vel sunt id ex veritatis. Labore rerum, odit sapiente, alias mollitia magnam exercitationem modi amet earum quia atque ipsum voluptas asperiores quas laboriosam.</p>
+								<p>{{ $sample->description}}</p>
+								
 							</div>
+							@endforeach
 						</div>
 					</div>
 				</section>

@@ -8,7 +8,7 @@
                 <p>Some cool stuff here... <br /> And even cooler stuff here...</p>
                 
 				<ul class="actions">
-					<li><a href="#" class="button special big">Get Started</a></li>
+					<li><a href="/composition" class="button special big">Listen</a></li>
 				</ul>
 			</section>
 @endsection

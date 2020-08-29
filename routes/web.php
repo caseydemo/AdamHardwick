@@ -22,10 +22,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/composition', 'MediaController@show');
 
-Route::get('/composition', function () {
-    return view('composition');
-});
+// Route::get('/composition', function () {
+//     return view('composition');
+// });
 
 
 

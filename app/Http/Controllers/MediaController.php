@@ -45,10 +45,8 @@ class MediaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id) {
-        // $s3 = App::make('aws')->createClient('s3');
-        // $s3->registerStreamWrapper();
-        $media = App\Media::first();
+    public function show($id = false) {
+        $media = App\Media::all();
         return view('media.show', ['media' => $media]);
     }
 
