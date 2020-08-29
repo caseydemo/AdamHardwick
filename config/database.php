@@ -81,7 +81,6 @@ return [
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',
         ),
-
         'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DATABASE_URL'),
